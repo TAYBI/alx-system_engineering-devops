@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
-#prints a string `Best School` 10 times
+# This script is displaying "Best School" 10 times using an until loop
 
-i=1
-until [ $i -gt 10 ]; do
-echo "Best School"
-i=$((i+1))
+# Initialize a counter
+counter=0
+
+# Use an until loop to display "Best School" until the counter is greater than or equal to 10
+until [ $counter -ge 10 ]; do
+    echo "Best School"
+    ((counter++))
 done
